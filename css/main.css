@@ -1,0 +1,52 @@
+/* 
+    CSS Guide 
+
+    1.  General rules
+    2.  General Styles
+*/
+
+/* 1. ---General rules - scales images, videos to size of container--- */
+img, embed, object, video, picture {
+    max-width: 100%; 
+}
+
+html {
+    box-sizing: border-box; 
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; 
+}
+
+body, p, h1, h2, h3, h4, h5 {
+    margin: 0px; 
+    padding: 0px;
+}
+
+/* 2. ---General Styles--- */
+
+body {
+    color: #707070;
+    font-family: 'Sanchez', 'Times New Roman', serif;
+}
+
+a {
+    color: #707070;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.hidden {
+    display: none;
+}
