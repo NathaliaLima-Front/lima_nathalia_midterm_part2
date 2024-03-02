@@ -9,6 +9,9 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-column-gap: 30px;
     padding: 0 16px;
+
+    align-content: center;
+    align-items: center;
 }
 
 .col-span-1	    {grid-column: span 1 / span 1;}
@@ -33,6 +36,7 @@
 @media screen and (min-width: 768px) {
     .grid-con {
         grid-template-columns: repeat(12, minmax(0, 1fr));
+        grid-column-gap: 20px;
     }
 
     .m-col-span-1	    {grid-column: span 1 / span 1;}
@@ -80,6 +84,10 @@
 
 /* ---Desktop Library Grid Styles--- */
 @media screen and (min-width: 1200px) {
+    .grid-con {
+        grid-column-gap: 16px;
+    }
+
     .l-col-span-1	    {grid-column: span 1 / span 1;}
     .l-col-span-2	    {grid-column: span 2 / span 2;}
     .l-col-span-3	    {grid-column: span 3 / span 3;}
