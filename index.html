@@ -15,106 +15,181 @@
 <body>
     <h1 class="hidden">Welcome to HTML Boxed Responsive Layouts website</h1>
 
-    <header>
+    <header id="sticky-nav" class="grid-con">
         <h2 class="hidden">Main Navigation</h2>
-        <div id="logo">
-            <span>LOGO</span>
-        </div>
-        <div id="nav">
-            <ul>
-                <li>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    <a href="#">Link 4</a>
-                </li>
-            </ul>
-        </div>
-        <div id="buttons">
-            <a href="#">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-            <a href="#">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-            <a href="#">
-                <i class="fa-solid fa-bars"></i>
-            </a>
+        <div id="logo" class="col-start-1 col-end-3 m-col-start-1 m-col-end-3 l-col-start-1 l-col-end-3">Logo</div>
+        <ul id="nav" class="show-hide l-col-start-5 l-col-end-11">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+        <div id="buttons" class="col-start-3 col-end-5 m-col-start-10 m-col-end-13 l-col-start-13 l-col-end-13">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
         </div>
     </header>
 
-    <section id="hero">
+    <section id="hero" class="grid-con">
         <h2 class="hidden">Main image</h2>
-        <div>HERO IMAGE</div>
+        <div class="col-span-4 m-col-start-1 m-col-end-13">
+            <i class="fa-regular fa-image"></i>
+            <span>HERO IMAGE</span>
+        </div>
     </section>
 
-    <section id="promo_images">
+    <section id="promo_images" class="grid-con">
         <h2 class="hidden">Promo Images section</h2>
-        <div>
-            <div>Promo image 1</div>
-            <div>Promo image 2</div>
-            <div>Promo image 2</div>
+        <div class="col-span-4 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-5">
+            <i class="fa-regular fa-image"></i>
+            <span>Promo image 1</span>
+        </div>
+        <div class="mobile-hide m-col-start-7 m-col-end-13 l-col-start-5 l-col-end-9">
+            <i class="fa-regular fa-image"></i>
+            <span>Promo image 2</span>
+        </div>
+        <div class="tablet-hide m-col-start-9 m-col-end-13 l-col-start-9 l-col-end-13">
+            <i class="fa-regular fa-image"></i>
+            <span>Promo image 3</span>
         </div>
     </section>
 
     <section class="products">
         <h2 class="hidden">Products section</h2>
-        <div>
-            <div>Product 1</div>
-            <div>Product 2</div>
-            <div>Product 3</div>
-            <div>Product 4</div>
+        <div class="grid-con">
+            <div class="col-span-4 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-4">
+                <div class="prd_img">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Product</span>
+                </div>
+                <div class="prd_dsc">
+                    <p>Product name</p>
+                    <p>$ 99.00</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="mobile-hide m-col-start-7 m-col-end-13 l-col-start-4 l-col-end-7">
+                <div class="prd_img">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Product</span>
+                </div>
+                <div class="prd_dsc">
+                    <p>Product name</p>
+                    <p>$ 99.00</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="tablet-hide m-col-start-9 m-col-end-13 l-col-start-7 l-col-end-10">
+                <div class="prd_img">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Product</span>
+                </div>
+                <div class="prd_dsc">
+                    <p>Product name</p>
+                    <p>$ 99.00</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="tablet-hide m-col-start-9 m-col-end-13 l-col-start-10 l-col-end-13">
+                <div class="prd_img">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Product</span>
+                </div>
+                <div class="prd_dsc">
+                    <p>Product name</p>
+                    <p>$ 99.00</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="show_now_banner">
+    <section class="grid-con shop_now_banner">
         <h2 class="hidden">Shop now image</h2>
-        <div>Shop now image</div>
+        <div class="col-span-4 m-col-start-1 m-col-end-13">
+            <i class="fa-regular fa-image"></i>
+            <span>Shop now image</span>
+        </div>
     </section>
 
     <section class="products">
         <h2 class="hidden">Products section</h2>
-        <div>
-            <div>Product 5</div>
-            <div>Product 6</div>
-            <div>Product 7</div>
-            <div>Product 8</div>
+        <div class="grid-con">
+            <div class="col-span-4 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-4">
+                <div class="prd_img">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Product</span>
+                </div>
+                <div class="prd_dsc">
+                    <p>Product name</p>
+                    <p>$ 99.00</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="mobile-hide m-col-start-7 m-col-end-13 l-col-start-4 l-col-end-7">
+                <div class="prd_img">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Product</span>
+                </div>
+                <div class="prd_dsc">
+                    <p>Product name</p>
+                    <p>$ 99.00</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="tablet-hide m-col-start-9 m-col-end-13 l-col-start-7 l-col-end-10">
+                <div class="prd_img">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Product</span>
+                </div>
+                <div class="prd_dsc">
+                    <p>Product name</p>
+                    <p>$ 99.00</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="tablet-hide m-col-start-9 m-col-end-13 l-col-start-10 l-col-end-13">
+                <div class="prd_img">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Product</span>
+                </div>
+                <div class="prd_dsc">
+                    <p>Product name</p>
+                    <p>$ 99.00</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="show_now_banner">
+    <section class="grid-con shop_now_banner">
         <h2 class="hidden">Shop now image</h2>
-        <div>Shop now image</div>
+        <div class="col-span-4 m-col-start-1 m-col-end-13">
+            <i class="fa-regular fa-image"></i>
+            <span>Shop now image</span>
+        </div>
     </section>
 
-    <footer id="footer">
+    <footer id="footer" class="grid-con">
         <h2 class="hidden">Footer Section</h2>
-
-        <div id="logo_f">
-            <span>LOGO</span>
-        </div>
-        <div id="nav_f">
+        <div id="logo_f" class="col-start-2 col-end-4 m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-2">LOGO</div>
+        <div id="nav_f" class="col-span-4 m-col-start-6 m-col-end-8 l-col-start-4 l-col-end-10">
             <ul>
-                <li>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    <a href="#">Link 4</a>
-                </li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
             </ul>
         </div>
-        <div id="social_f">
-            <a href="#">
-                <i class="fa-brands fa-square-facebook"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-square-instagram"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-square-x-twitter"></i>
-            </a>
+        <div id="social_f" class="col-span-4 m-col-start-10 m-col-end-13 l-col-start-11 l-col-end-13">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+            </ul>
         </div>
-        <div id="copyright">
+        <div id="copyright" class="col-span-4 m-col-start-1 m-col-end-13">
             <p>
                 ©2024 Company's name Inc. All Rights Reserved. Privacy policy 
             </p>

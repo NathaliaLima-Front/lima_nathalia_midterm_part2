@@ -3,6 +3,12 @@
 
     1.  General rules
     2.  General Styles
+    3.  Main Nav
+    4.  Main Hero Image
+    5.  Promo Images
+    6.  Products
+    7.  Shop now
+    8.  Footer
 */
 
 /* 1. ---General rules - scales images, videos to size of container--- */
@@ -45,8 +51,303 @@ input, textarea {
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
-  
-.hidden {
+
+.hidden,
+.show-hide,
+.mobile-hide,
+.tablet-hide {
     display: none;
+}
+
+/* ---Mobile Library Grid Styles--- */
+
+/* 3. ---Main Nav--- */
+
+#sticky-nav {
+    height: 80px;
+    position: sticky;
+    top: 0px;
+    background-color: #A8A8A8;
+    z-index: 1;
+}
+
+#sticky-nav #logo,
+#sticky-nav #buttons a,
+#sticky-nav #nav li a {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#sticky-nav #logo {
+    max-width: 175px;
+    line-height: 34px;
+    text-align: center;
+}
+
+#sticky-nav #nav {
+    justify-content: space-between;
+    max-width: 520px;
+}
+
+#sticky-nav #nav li {
+    display: inline;
+}
+
+#sticky-nav #nav li a {
+    padding: 5px 25px;
+}
+
+#sticky-nav #buttons {
+    text-align: end;
+}
+
+#sticky-nav #buttons a {
+    padding: 8px 9px;
+    text-align: center;
+}
+
+#sticky-nav #buttons a:not(:last-child) {
+    margin-right: 15px;
+}
+
+
+/* 4. ---Main Hero Image--- */
+#hero {
+    height: 460px;
+    background-color: #D2D2D2;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero span,
+#promo_images span,
+.products span,
+.shop_now_banner span {
+    display: block;
+    text-transform: uppercase;
+}
+
+
+/* 5. ---Promo Images--- */
+#promo_images,
+.products,
+.shop_now_banner {
+    margin-top: 30px;
+}
+
+#promo_images div {
+    padding: 280px 30px;
+    text-align: center;
+    background-color: #A8A8A8;
+    color: #fff;
+}
+
+#hero,
+#promo_images div,
+.products div,
+.shop_now_banner {
+    font-size: 20px;
+}
+
+/* 6. ---Products--- */
+
+.products .prd_img {
+    height: 400px;
+    padding: 170px 50px;
+    text-align: center;
+    background-color: #D2D2D2;
+}
+
+.products .prd_dsc:first-child {
+    font-size: 14px;
+}
+
+.products .prd_dsc {
+    font-size: 12px;
+    margin: 20px;
+}
+
+/* 7. ---Shop now--- */
+.shop_now_banner {
+    height: 400px;
+    background-color: #E5E5E5;
+    text-align: center;
+}
+
+/* 8. ---Footer--- */
+#footer {
+    text-align: center;
+    justify-items: center;
+    padding-top: 50px;
+    background-color: #A8A8A8;
+}
+
+#footer,
+#footer a {
+    color: #fff;
+}
+
+#footer #logo_f {
+    width: 200px;
+    padding: 0 77px;
+    line-height: 70px;
+    background-color: #fff;
+    color: initial;
+}
+
+#footer #nav_f {
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+#footer #nav_f li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+#footer #social_f li {
+    display: inline;
+    font-size: 46px;
+}
+
+#footer #social_f li:not(:last-child) {
+    margin-right: 20px;
+}
+
+#footer #copyright {
+    font-size: 18px;
+    margin: 35px 0 20px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    width: 100%;
+}
+
+/* ---Tablet Library Grid Styles--- */
+@media screen and (min-width: 768px) {
+    .mobile-hide {
+        display: block;
+    }
+    
+    #sticky-nav #logo {
+        max-width: 230px;
+    }
+
+    #sticky-nav #buttons a {
+        padding: 8px 12px;
+    }
+
+    #hero {
+        height: 600px;
+    }
+
+    #promo_images,
+    .products,
+    .shop_now_banner {
+        margin-top: 60px;
+    }
+
+    #promo_images div {
+        height: 400px;
+        padding: 143px 70px;
+    }
+
+    #hero,
+    #promo_images div,
+    .products div,
+    .shop_now_banner {
+        font-size: 30px;
+    }
+
+    .products .prd_img {
+        height: 550px;
+        padding: 230px 50px;
+    }
+
+    .products .prd_dsc:first-child {
+        font-size: 16px;
+    }
+
+    .products .prd_dsc {
+        font-size: 14px;
+    }
+
+    .shop_now_banner {
+        height: 600px;
+    }
+
+    #footer {
+        padding: 0;
+    }
+
+    #footer #nav_f {
+        margin: 40px 0;
+    }
+}
+
+/* ---Desktop Library Grid Styles--- */
+@media screen and (min-width: 1200px) { 
+    .show-hide {
+        display: flex;
+    }
+
+    .tablet-hide {
+        display: block;
+    }
+
+    #sticky-nav #logo {
+        max-width: 260px;
+    }
+
+    #hero {
+        height: 850px;
+    }
+
+    #promo_images,
+    .products,
+    .shop_now_banner {
+        margin-top: 80px;
+    }
+
+    #promo_images div {
+        height: 600px;
+        padding: 224px 60px;
+    }
+
+    #hero,
+    #promo_images div,
+    .products div,
+    .shop_now_banner {
+        font-size: 40px;
+    }
+
+    .products .prd_img {
+        height: 670px;
+        padding: 280px 20px;
+    }
+
+    .products .prd_dsc:first-child {
+        font-size: 18px;
+    }
+
+    .products .prd_dsc {
+        font-size: 16px;
+    }
+
+    #footer {
+        justify-items: initial;
+    }
+
+    #footer #nav_f li {
+        display: inline;
+    }
+
+    #footer #nav_f li a {
+        color: initial;
+        padding: 5px 23px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
 }
